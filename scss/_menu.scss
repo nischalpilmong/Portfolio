@@ -81,8 +81,8 @@ visibility: hidden;
              transform: translate3d(0, 0, 0);
          }
          .portrait{
-             width: 250px;
-             height: 280px;
+             width: 200px;
+             height: 220px;
              background: url('../img/portrait.jpg');
              background-size: cover;
              background-repeat: no-repeat;
@@ -123,3 +123,4 @@ visibility: hidden;
         transition-delay: $x * 0.2s;
     }
 }
+
