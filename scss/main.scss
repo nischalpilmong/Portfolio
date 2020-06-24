@@ -107,6 +107,29 @@ main{
    }
    
 }
+//Contact Page
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    div{
+        font-size: 2rem;
+        border: 3px solid #fff;
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 1rem;
+        @include easeOut;
+
+        &:hover{
+            padding: 0.5rem 1.5rem;
+            background: $secondary-color;
+        }
+    }
+}
+
+
 
 //Button Styles
 .btn{
