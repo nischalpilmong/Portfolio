@@ -19,10 +19,11 @@ h1, h2, h3{
     margin: 0;
     font-weight: 400;
 
-    &.lg-heading{
+    &.lg-heading{ 
        font-size: 3rem;
     }
     &.sm-heading{
+        margin-top: 0.8rem;
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color,2), 0.5);
@@ -47,6 +48,7 @@ header{
 
 main{
     padding: 4rem;
+    margin-left: 8rem;
     //height: 100%;
     min-height: calc(100vh - 60px);
     .icons{
@@ -78,13 +80,27 @@ main{
         grid-area: bioimage;
         width: 200px;
         height: 200px;
-        margin: auto;
+        margin: 4rem 2rem 4rem 1rem;
         border-radius: 50%;
         border: 3px solid $secondary-color; 
     }
     
     .bio{
         grid-area: bio;
+        margin: 4rem 1rem 2rem 1rem;
+    }
+    .bio > h3{
+        font-size: 2.5rem;
+    }
+    p.about-description{
+        margin-top: 0.3rem;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        word-wrap: break-word;
+        word-spacing: 0.3rem;
+        direction: ltr;
     }
 }
 

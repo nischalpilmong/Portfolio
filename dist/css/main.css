@@ -121,6 +121,7 @@ h1, h2, h3 {
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 3rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    margin-top: 0.8rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
@@ -139,6 +140,7 @@ header {
 
 main {
   padding: 4rem;
+  margin-left: 8rem;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
@@ -160,11 +162,23 @@ main {
     grid-area: bioimage;
     width: 200px;
     height: 200px;
-    margin: auto;
+    margin: 4rem 2rem 4rem 1rem;
     border-radius: 50%;
     border: 3px solid #eece1a; }
   .about-info .bio {
-    grid-area: bio; }
+    grid-area: bio;
+    margin: 4rem 1rem 2rem 1rem; }
+  .about-info .bio > h3 {
+    font-size: 2.5rem; }
+  .about-info p.about-description {
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    word-wrap: break-word;
+    word-spacing: 0.3rem;
+    direction: ltr; }
 
 .projects {
   display: grid;
@@ -221,11 +235,11 @@ main {
   color: #444; }
 
 @media screen and (min-width: 1171px) {
-  .porjects {
+  .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  .porjects {
+  .projects {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
@@ -263,6 +277,18 @@ main {
 
 @media screen and (max-width: 500px) {
   main#home h1 {
+    margin-top: 30vh; }
+  main#home {
+    margin: 0 auto; }
+  main#about h1 {
     margin-top: 10vh; }
-  .porjects {
+  main#about {
+    margin: 0 auto; }
+  main > .about-info {
+    margin-top: 3rem; }
+  main > .about-info > .bio-image {
+    margin: 2rem auto; }
+  main > .about-info > .bio {
+    margin-top: 0.2rem; }
+  .projects {
     grid-template-columns: 1fr; } }

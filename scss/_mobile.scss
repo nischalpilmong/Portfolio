@@ -1,13 +1,13 @@
 //WideScreens
 @include mediaXL{
-  .porjects{
+  .projects{
       grid-template-columns: repeat(4, 1fr);
   }
 }
 
 //Desktops and Laptops
 @include mediaLg{
-    .porjects{
+    .projects{
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -66,9 +66,29 @@
 //SmartPhones
 @include mediaSm{
     main#home h1{
-       margin-top: 10vh;
+       margin-top: 30vh;
     }
-    .porjects{
+    main#home{
+        margin: 0 auto;
+    }
+    //About Me pages
+    main#about h1{
+        margin-top: 10vh;
+    }
+    main#about{
+        margin: 0 auto;
+    }
+    main > .about-info{
+        margin-top: 3rem;
+    }
+    main > .about-info > .bio-image{
+        margin: 2rem auto;
+    }
+    main > .about-info > .bio{
+        margin-top: 0.2rem;
+    }
+    //Work or projects
+    .projects{
         grid-template-columns: 1fr;
     }
 }
